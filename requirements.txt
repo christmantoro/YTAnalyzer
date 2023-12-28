@@ -1,0 +1,8 @@
+# Step-1 : Install the packages
+streamlit 
+pytube
+youtube_transcript_api
+langchain # main Langchain Library
+openai # This is the official Python package for OpenAI's API, enabling you to work with powerful
+chromadb # Vector Database 
+tiktoken # use to count and manage tokens
