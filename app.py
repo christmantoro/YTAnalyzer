@@ -42,7 +42,7 @@ def analyze_video():
     # Column 2
     with col2:
         with st.spinner("Analyzing Video contents..."):
-            response = mydb.create_db_and_analye(video_url)
+            response = mydb.create_db_and_analyze(video_url)
             try:
                 st.subheader("Video Summary")
                 st.write(textwrap.fill(response, width=50))
