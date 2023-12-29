@@ -45,10 +45,10 @@ def analyze_video():
             response = mydb.create_db_and_analyze(video_url)
             try:
                 st.subheader("Video Summary")
-                st.write(textwrap.fill(response, width=50))
+                st.write(textwrap.fill(response, width=80))
             except:
                 st.write("Something went wrong!")
-            st.markdown(f"Developed By [Haider Ali]({'https://www.linkedin.com/in/haiderkhalil/'})")
+            st.markdown(f"Code from [Github]({'https://github.com/haiderkhalil/YouTubeAnalyzer_udemy'})")
             hit_counter()
     
 def hit_counter():
@@ -56,7 +56,7 @@ def hit_counter():
         hit_count = int(file.read())
 
         # Increment the hit count
-        hit_count += 1
+        hit_count += 3
 
         # Update the hit count in the file
         with open("hit_count.txt", "w") as file:
